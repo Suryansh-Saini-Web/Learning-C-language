@@ -1,4 +1,4 @@
-//--------------- Program to find whether a student is pass or fail, if it requires total 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an input from user.---------------- (uncomment the below to execute.)
+//--------------- Practice Question 1 - Program to find whether a student is pass or fail, if it requires total 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an input from user.---------------- (uncomment the below to execute.)
 
 /*
 #include <stdio.h>
@@ -27,7 +27,7 @@ int main()
 
 
 
-// ---------------Program to calculate Income Tax according to these income slabs: Below 2.5 lakh - 0 tax, 2.5 lakh to 5 lakh - 5% tax, 5 lakh to 10 lakh - 20% tax, Above 10 lakh - 30% tax.------------------------- (uncomment the below to execute.)
+// --------------- Practice Question 2 - Program to calculate Income Tax according to these income slabs: Below 2.5 lakh - 0 tax, 2.5 lakh to 5 lakh - 5% tax, 5 lakh to 10 lakh - 20% tax, Above 10 lakh - 30% tax.------------------------- (uncomment the below to execute.)
 
 // --------This is the code written by me as per my understanding.------------
 
@@ -89,7 +89,7 @@ int main(){
 
 
 
-// ---------------Program to find whether year entered by user is leap year or not.--------------------
+// --------------- Practice Question 3 - Program to find whether year entered by user is leap year or not.(uncomment the below to execute)--------------------
 
 /*
 #include<stdio.h>
@@ -109,7 +109,7 @@ int main(){
 
 
 
-// ------------------Program to find whether a character entered by user is Lowercase or Uppercase.------------------
+// ------------------ Practice Question 4 - Program to find whether a character entered by user is Lowercase or Uppercase.(uncomment the below to execute)------------------
 
 /*
 #include <stdio.h>
@@ -138,7 +138,7 @@ int main()
 
 
 
-// -------------Program to find greatest of the four numbers entered by user.----------------
+// ------------- Practice Question 5 - Program to find greatest of the four numbers entered by user.(uncomment to execute)----------------
 
 // --------This is the code written by me as per my understanding.------------
 

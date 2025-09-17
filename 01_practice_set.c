@@ -1,4 +1,5 @@
 // --------Practice question 1 - Calculate area of rectangle using hard coded inputs----------- (uncomment to execute)
+
 /*
 #include<stdio.h>
 

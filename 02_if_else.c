@@ -1,3 +1,5 @@
+// ------------------Learning about if-else statements, Relational operator (equals to) - == and modulus (remainder) operator - % (uncomment to execute)--------------------
+
 /*
 #include<stdio.h>
 
@@ -17,6 +19,8 @@ int main(){
 
 
 
+// ------------------Learning about Relational operator (greater than or equal to) - >= (uncomment to execute)--------------------
+
 /* 
 #include<stdio.h>
 
@@ -34,6 +38,8 @@ int main(){
 */
 
 
+
+// ------------------Learning about if-else-if statements, Relational operator (Less than or equals to) - <= (uncomment to execute)--------------------
 
 /*
 #include <stdio.h>

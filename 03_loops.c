@@ -1,4 +1,4 @@
-// ----------Leaerning about while loop--------------
+// ----------Learning about while loop and increment (++) operator. (uncomment to execute)--------------
 
 /*
 #include<stdio.h>
@@ -30,7 +30,7 @@ int main(){
 
 
 
-// ----------Leaerning about do-while loop--------------
+// ----------Learning about do-while loop.(uncomment to execute)--------------
 
 /*
 #include<stdio.h>
@@ -50,7 +50,7 @@ int main(){
 
 
 
-// ----------Leaerning about for-loop--------------
+// ----------Learning about for-loop. (uncomment to execute)--------------
 
 /*
 #include<stdio.h>
