@@ -114,7 +114,6 @@ int main(){
     int input, sum = 1;
     printf("Please enter a number to find its factorial. \n");
     scanf("%d", &input);
-    int original = input;
     for(int a = input; a; a--){
         sum *= a;
     }
