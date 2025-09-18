@@ -4,3 +4,9 @@
 4. 02_practice_set.c -- Practiced the above through practice sets and learnt about Arithmetic Operator: Remainder (%). Logical Operators: AND (&&), OR (||), NOT (!).  
 5. 03_loops.c -- Learnt about while, do-while and for loop. Learnt about increment (++) and decrement (--) operator.
 6. 03_practice_set.c -- Practiced the above through practice sets.
+7. 04_project.c -- Made a number guessing game in C language. Learnt about srand, how to generate random number, how to validate user input using fgets and sscanf, learnt how to clear the input buffer.
+   Functionalities added in project:
+   a) User can see how many chances (to play) are left.
+   b) User can see his previous guesses.
+   c) User can choose to play again if he wins or loses. 
+   d) User can see if he entered higher number than random number or lower. 
