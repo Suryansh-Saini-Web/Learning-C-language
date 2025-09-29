@@ -1,4 +1,4 @@
-// -----------Learning about Boiler Plate code. (uncomment to execute)-------
+// -----------Learning about Boiler Plate code. (uncomment below code to execute)-------
 
 /*
 #include<stdio.h>
@@ -10,7 +10,7 @@ int main(){
 */
 
 
-// ----------Learning about data types. (uncomment to execute)--------------
+// ----------Learning about data types. (uncomment below code to execute)--------------
 
 /*
 #include<stdio.h>
@@ -27,7 +27,7 @@ int main(){
 */
 
 
-// -------Learning about calculation in C. (uncomment to execute)--------
+// -------Learning about calculation in C. (uncomment below code to execute)--------
 
 /*
 #include<stdio.h>
@@ -42,7 +42,7 @@ int main(){
 }
 */
 
-// ---------Learning about taking input from user. (uncomment to execute)-------
+// ---------Learning about taking input from user. (uncomment below code to execute)-------
 
 /*
 #include<stdio.h>

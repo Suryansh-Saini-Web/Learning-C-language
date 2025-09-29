@@ -1,4 +1,4 @@
-// --------Practice question 1 - Calculate area of rectangle using hard coded inputs----------- (uncomment to execute)
+// --------Practice question 1 - Calculate area of rectangle using hard coded inputs----------- (uncomment below code to execute)
 
 /*
 #include<stdio.h>
@@ -11,7 +11,7 @@ int main(){
 }
 */
 
-// --------Practice question 2 - Calculate area of rectangle using inputs supplied by user----------- (uncomment to execute)
+// --------Practice question 2 - Calculate area of rectangle using inputs supplied by user----------- (uncomment below code to execute)
 
 /*
 #include<stdio.h>
@@ -27,7 +27,7 @@ int main(){
 }
 */
 
-// --------Practice question 3 - Calculate area of circle and volume of cylinder (height of cylinder already given) using inputs supplied by user----------- (uncomment to execute)
+// --------Practice question 3 - Calculate area of circle and volume of cylinder (height of cylinder already given) using inputs supplied by user----------- (uncomment below code to execute)
 
 /*
 #include<stdio.h>
@@ -46,7 +46,7 @@ int main(){
 */
 
 
-// --------Practice question 4 - Convert Centigrade temperature to Fahrenheit using inputs supplied by user----------- (uncomment to execute)
+// --------Practice question 4 - Convert Centigrade temperature to Fahrenheit using inputs supplied by user----------- (uncomment below code to execute)
 
 /*
 #include<stdio.h>
@@ -62,7 +62,7 @@ int main(){
 */
 
 
-// --------Practice question 5 - Calculate Simple interest using inputs supplied by user----------- (uncomment to execute)
+// --------Practice question 5 - Calculate Simple interest using inputs supplied by user----------- (uncomment below code to execute)
 
 /*
 #include<stdio.h>

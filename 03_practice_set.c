@@ -1,4 +1,4 @@
-// ------------Q1 - Write a program to print multiplication table of a given number n.(Uncomment to execute)-----------------------
+// ------------Q1 - Write a program to print multiplication table of a given number n.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>
@@ -18,7 +18,7 @@ int main(){
 
 
 
-// ------------Q2 - Write a program to print multiplication table of a 10 in reversed order.(Uncomment to execute)-----------------------
+// ------------Q2 - Write a program to print multiplication table of a 10 in reversed order.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>
@@ -33,7 +33,7 @@ int main(){
 
 
 
-// ------------Q3 - Write a program to sum first ten natural numbers using while loop.(Uncomment to execute)-----------------------
+// ------------Q3 - Write a program to sum first ten natural numbers using while loop.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>
@@ -51,7 +51,7 @@ int main(){
 
 
 
-// ------------Q4 - Write a program to sum first ten natural numbers using do-while loop.(Uncomment to execute)-----------------------
+// ------------Q4 - Write a program to sum first ten natural numbers using do-while loop.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>
@@ -69,7 +69,7 @@ int main(){
 
 
 
-// ------------Q5 - Write a program to sum first ten natural numbers using for-loop.(Uncomment to execute)-----------------------
+// ------------Q5 - Write a program to sum first ten natural numbers using for-loop.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>
@@ -86,7 +86,7 @@ int main(){
 
 
 
-// ------------Q6 - Write a program to calculate the sum of the numbers occuring in the multiplication table of 8.(Uncomment to execute)-----------------------
+// ------------Q6 - Write a program to calculate the sum of the numbers occuring in the multiplication table of 8.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>
@@ -105,7 +105,7 @@ int main(){
 
 
 
-// ------------Q7 - Write a program to calculate the factorial of a given number using a for-loop.(Uncomment to execute)-----------------------
+// ------------Q7 - Write a program to calculate the factorial of a given number using a for-loop.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>
@@ -124,7 +124,7 @@ int main(){
 
 
 
-// ------------Q8 - Write a program to calculate the factorial of a given number using a while loop.(Uncomment to execute)-----------------------
+// ------------Q8 - Write a program to calculate the factorial of a given number using a while loop.(Uncomment below code to execute)-----------------------
 
 /*
 #include<stdio.h>

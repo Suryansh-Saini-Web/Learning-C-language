@@ -148,7 +148,7 @@ int fibonacci(int number){
 
 
 
-// ------------Q6 - Write a recursive function to calculate the sum of first n natural numbers.(uncomment to execute)--------------
+// ------------Q6 - Write a recursive function to calculate the sum of first n natural numbers.(uncomment below code to execute)--------------
 
 /*
 #include<stdio.h>
@@ -176,7 +176,7 @@ int sum(int number){
 
 
 
-// ------------Q7 - Write a program using function to print the star pattern.(uncomment to execute)--------------
+// ------------Q7 - Write a program using function to print the star pattern.(uncomment below code to execute)--------------
 
 /*
 #include<stdio.h>
@@ -211,7 +211,7 @@ void pattern(int lines){
 
 
 
-// ------------Q8 - Write a program using for loop to print the star pattern.(uncomment to execute)--------------
+// ------------Q8 - Write a program using for loop to print the star pattern.(uncomment below code to execute)--------------
 
 /*
 #include<stdio.h>
