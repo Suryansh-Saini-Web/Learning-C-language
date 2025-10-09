@@ -11,4 +11,6 @@
    c) User can choose to play again if he wins or loses. <br>
    d) User can see if he entered higher number than random number or lower. <br>
 8. 05_functions_and_recursion.c -- Learnt about functions - function prototype, function calling and function definition. Learnt about Recursion.
-9. 05_practice_set.c -- Practiced the above through practice sets. 
+9. 05_practice_set.c -- Practiced the above through practice sets.
+10. 06_pointers.c -- Learnt about pointers and call by reference functions.
+11. 06_practice_set.c -- Practiced the above through practice sets.
