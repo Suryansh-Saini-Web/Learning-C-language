@@ -14,3 +14,5 @@
 9. 05_practice_set.c -- Practiced the above through practice sets.
 10. 06_pointers.c -- Learnt about pointers and call by reference functions.
 11. 06_practice_set.c -- Practiced the above through practice sets.
+12. 07_arrays.c -- Learnt about Arrays, Pointer Arithmetic, accessing arrays using pointers, 2-d Arrays.
+13. 07_practice_set.c -- Practiced the above through practice sets.
