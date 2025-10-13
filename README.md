@@ -16,3 +16,5 @@
 11. 06_practice_set.c -- Practiced the above through practice sets.
 12. 07_arrays.c -- Learnt about Arrays, Pointer Arithmetic, accessing arrays using pointers, 2-d Arrays.
 13. 07_practice_set.c -- Practiced the above through practice sets.
+14. 08_strings.c -- Learnt about strings, %s format specifier, gets(), strlen(), strcpy(), strcat().
+15. 08_practice_set.c -- Practiced the above through practice sets.
