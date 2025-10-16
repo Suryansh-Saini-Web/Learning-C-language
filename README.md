@@ -18,3 +18,5 @@
 13. 07_practice_set.c -- Practiced the above through practice sets.
 14. 08_strings.c -- Learnt about strings, %s format specifier, gets(), strlen(), strcpy(), strcat().
 15. 08_practice_set.c -- Practiced the above through practice sets.
+16. 09_struct.c -- Learnt about Structures, Array of structures, member operator (.), pointer to a structure, arrow operator(->), passing structure to a function, typedef.
+17. 09_practice_set.c -- Practiced the above through practice sets.
