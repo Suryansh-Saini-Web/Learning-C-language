@@ -3,8 +3,15 @@
 /*
 #include<stdio.h>
 
+void filecheck(FILE *ptr){
+    if(ptr == NULL){
+        printf("This file does not exist");
+    }
+}
+
 int main(){
     FILE *ptr = fopen("10_Sample.txt", "r");
+    filecheck(ptr);
     int age1, age2, age3;
     fscanf(ptr, "%d", &age1);
     fscanf(ptr, "%d", &age2);
