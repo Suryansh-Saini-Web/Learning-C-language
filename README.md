@@ -20,3 +20,8 @@
 15. 08_practice_set.c -- Practiced the above through practice sets.
 16. 09_struct.c -- Learnt about Structures, Array of structures, member operator (.), pointer to a structure, arrow operator(->), passing structure to a function, typedef.
 17. 09_practice_set.c -- Practiced the above through practice sets.
+18. 10_file_handling.c -- Learnt how to take input from a file, how to write to a file, fopen(), fclose(), fscanf(), fprintf(), fgetc(), rewind(), FILE *ptr, EOF, NULL.
+19. 10_sample.txt -- Used in 10_file_handling.c
+20. 10_sample2.txt -- Used in 10_file_handling.c
+21. 10_practice_set.c -- Practiced the concepts of 10_file_handling.c through practice sets.
+22. 10_sample3.txt -- Used in 10_practice_set.c
