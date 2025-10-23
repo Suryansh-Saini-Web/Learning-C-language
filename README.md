@@ -25,3 +25,4 @@
 20. 10_sample2.txt -- Used in 10_file_handling.c
 21. 10_practice_set.c -- Practiced the concepts of 10_file_handling.c through practice sets.
 22. 10_sample3.txt -- Used in 10_practice_set.c
+23. 11_project2.c -- Made a Rock, Paper, Scissor game in C language.
