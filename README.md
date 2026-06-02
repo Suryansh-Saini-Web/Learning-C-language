@@ -28,3 +28,4 @@
 23. 11_project2.c -- Made a Rock, Paper, Scissor game in C language.
 24. 12_dynamic_mem.c -- Learnt about malloc(), sizeof(), calloc(), free() and realloc().
 25. 12_practice_set.c -- Practiced the above through practice sets.
+26. 13_project3.c --  Made a Telephone Directory Project with features like - Add Contact, Show All Contacts, Search Contact, Update Contact, Delete Contact.
