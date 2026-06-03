@@ -65,7 +65,7 @@ void DisplayOptions(){
     printf("6. Exit\n");
 }
 
-int GetUserIntInput(int MaxInput, int MinInput){ 
+int GetUserIntInput/*Single digit*/(int MaxInput, int MinInput){ 
     char buffer[3];
     while(1){
         printf("Enter Option: ");
