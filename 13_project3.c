@@ -81,10 +81,6 @@ int GetUserIntInput(int MaxInput, int MinInput){
             printf("Error: Invalid Input\n");
             continue;
         }
-        if(*end != '\n' && *end != '\0'){
-            printf("Error: Invalid Input\n");
-            continue;
-        }
         if(TempUserInput > MaxInput || TempUserInput < MinInput){
             printf("Error: Invalid Input\n");
             continue;
