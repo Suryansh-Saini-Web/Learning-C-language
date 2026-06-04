@@ -20,7 +20,6 @@ int GetUserIntInput/*Double Digit*/(int MaxInput, int MinInput){
             printf("Error: Invalid Input\n");
             continue;
         }
-        buffer[strcspn(buffer, "\n")] = '\0';
         char *end;
         int UserIntInput = strtol(buffer, &end, 10);
         if(end == buffer){
