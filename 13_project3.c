@@ -13,7 +13,7 @@ typedef struct contact{
 
 void FileError(){
     (printf("_____________________________________________\n"));
-    printf("Error: Failed to open contacts file!!!\n");
+    printf("Error: Failed To Open Contacts File!!!\n");
     (printf("_____________________________________________\n"));
     return;
 }
@@ -53,12 +53,12 @@ void PrintContact(contact new){
     return;
 }
 
-void DisplayOptions(){
+void ContactMenu(){
     printf("TELEPHONE DIRECTORY\n");
-    printf("Press a number to select the option:- \n");
+    printf("Press The Number To Select The Option:- \n");
     printf("1. Add Contact\n");
     printf("2. Search Contact\n");
-    printf("3. Show Contacts\n");
+    printf("3. Show All Contacts\n");
     printf("4. Update Contact\n");
     printf("5. Delete Contact\n");
     printf("6. Exit\n");
@@ -71,17 +71,17 @@ int GetUserIntInput/*Single digit*/(int MaxInput, int MinInput){
         fgets(buffer, sizeof(buffer), stdin);
         if(strchr(buffer, '\n') == NULL){
             ClearBuffer();
-            printf("Error: Invalid Input\n");
+            printf("Error: Invalid Input!!!!!\n");
             continue;
         }
         char *end;
         int TempUserInput = strtol(buffer, &end, 10);
         if(end == buffer){
-            printf("Error: Invalid Input\n");
+            printf("Error: Invalid Input!!!!!\n");
             continue;
         }
         if(TempUserInput > MaxInput || TempUserInput < MinInput){
-            printf("Error: Invalid Input\n");
+            printf("Error: Invalid Input!!!!!\n");
             continue;
         }
         return TempUserInput;
@@ -96,7 +96,7 @@ void GetContactName(char name[]){
         if(strchr(buffer, '\n') == NULL){
             ClearBuffer();
             printf("_____________________________________________\n");
-            printf("Error: Name too long!!!!!!!\n");
+            printf("Error: Name Too Long!!!!!!!\n");
             printf("_____________________________________________\n");
             continue;
         }
@@ -123,7 +123,7 @@ void GetContactName(char name[]){
         buffer[j] = '\0';
         if(strlen(buffer) == 0){
             printf("_____________________________________________\n");
-            printf("Error: Invalid input!!!!!!!\n");
+            printf("Error: Invalid Input!!!!!!!\n");
             printf("_____________________________________________\n");
             continue;
         }
@@ -135,7 +135,7 @@ void GetContactName(char name[]){
 void GetContactNumber(char num[]){
     while(1){
         char buffer[20];
-        printf("Enter Contact's Number (strictly with country code): ");
+        printf("Enter Contact's Number (Strictly With Country Code): ");
         fgets(buffer, sizeof(buffer), stdin);
         if(strchr(buffer, '\n') == NULL){
             ClearBuffer();
@@ -168,12 +168,12 @@ void GetContactNumber(char num[]){
 void GetContactEmail(char email[]){
     while(1){
         char buffer[52];
-        printf("Enter Contact's Email (Limit: 50 characters): ");
+        printf("Enter Contact's Email (Limit: 50 Characters): ");
         fgets(buffer, sizeof(buffer), stdin);
         if(strchr(buffer, '\n') == NULL){
             ClearBuffer();
             printf("_____________________________________________\n");
-            printf("Error: Email too long!!!!\n");
+            printf("Error: Email Too Long!!!!\n");
             printf("_____________________________________________\n");
             continue;
         }
@@ -241,7 +241,7 @@ int SearchContactByNum(FILE *fp, char num[]){
 }
 
 void AddContact(){
-    FILE *fp = fopen("13_project3.dat", "a+b");
+    FILE *fp = fopen("13_project3.dat", "ab+");
     if(fp == NULL){
         FileError();
         return;
@@ -255,7 +255,7 @@ void AddContact(){
         found = SearchContactByName(fp, copy);
         if(found){
             (printf("_____________________________________________\n"));
-            printf("Error: Name already exist!!!!!\n");
+            printf("Error: Name Already Exists!!!!!\n");
             fseek(fp, -sizeof(contact), SEEK_CUR);
             contact temp;
             fread(&temp, sizeof(contact), 1, fp);
@@ -269,7 +269,7 @@ void AddContact(){
         found = SearchContactByNum(fp, new.num);
         if(found){
             (printf("_____________________________________________\n"));
-            printf("Error: Phone number already exist!!!!\n");
+            printf("Error: Phone Number Already Exists!!!!\n");
             fseek(fp, -sizeof(contact), SEEK_CUR);
             contact temp;
             fread(&temp, sizeof(contact), 1, fp);
@@ -281,14 +281,14 @@ void AddContact(){
     fwrite(&new, sizeof(new), 1, fp);
     fclose(fp);
     printf("_____________________________________________\n");
-    printf("Contact saved successfully!!!!\n");
+    printf("Contact Saved Successfully!!!!\n");
     PrintContact(new);
     return;
 }
 
 int SearchContact(FILE *fp){
-    printf("Press '1' to search contact by name\n");
-    printf("Press '2' to search contact by phone number\n");
+    printf("Press '1' To Search Contact By Name\n");
+    printf("Press '2' To Search Contact By Phone Number\n");
     int UserInput = GetUserIntInput(2, 1);
     int found;
     switch(UserInput){
@@ -307,7 +307,7 @@ int SearchContact(FILE *fp){
 }
 
 void SearchAndShowContact(){
-    FILE *fp = fopen("13_project3.dat", "a+b");
+    FILE *fp = fopen("13_project3.dat", "ab+");
     if(fp == NULL){
         FileError();
         return;
@@ -315,22 +315,22 @@ void SearchAndShowContact(){
     int found = SearchContact(fp);
     if(!found){
         printf("_____________________________________________\n");
-        printf("Error: Contact not found\n");
+        printf("Error: Contact Not Found\n");
         printf("_____________________________________________\n");
     }else{
         fseek(fp, -sizeof(contact), SEEK_CUR);
         contact new;
         fread(&new, sizeof(contact), 1, fp);
         printf("_____________________________________________\n");
-        printf("Contact found successfully!!!!!!\n");
+        printf("Contact Found Successfully!!!!!!\n");
         PrintContact(new);
     }
     fclose(fp);
     return;
 }
 
-void ShowContacts(){
-    FILE *fp = fopen("13_project3.dat", "a+b");
+void ShowAllContacts(){
+    FILE *fp = fopen("13_project3.dat", "ab+");
     if(fp == NULL){
         FileError();
         return;
@@ -343,7 +343,7 @@ void ShowContacts(){
     }
     if(!found){
         printf("_____________________________________________\n");
-        printf("Error: No contacts found!!!!!!\n");
+        printf("Error: No Contacts Found!!!!!!\n");
         printf("_____________________________________________\n");
     }
     fclose(fp);
@@ -355,10 +355,10 @@ void UpdateContact(FILE *fp){
     fread(&temp, sizeof(contact), 1, fp);
     fseek(fp, -sizeof(contact), SEEK_CUR);
     printf("________________________________________\n");
-    printf("Press 1 to update contact's name\n");
-    printf("Press 2 to update contact's phone number\n");
-    printf("Press 3 to update contact's email\n");
-    printf("Press 4 to update whole contact\n");
+    printf("Press 1 to Update Contact's Name\n");
+    printf("Press 2 to Update Contact's Phone Number\n");
+    printf("Press 3 to Update Contact's Email\n");
+    printf("Press 4 to Update Entire Contact\n");
     printf("________________________________________\n");
     int UserInput = GetUserIntInput(4, 1);
     switch (UserInput)
@@ -367,21 +367,21 @@ void UpdateContact(FILE *fp){
         GetContactName(temp.name);
         fwrite(&temp, sizeof(contact), 1, fp);
         printf("________________________________________\n");
-        printf("Contact's name successfully updated!!!!\n");
+        printf("Contact's Name Successfully Updated!!!!\n");
         PrintContact(temp);
         break;
     case 2:
         GetContactNumber(temp.num);
         fwrite(&temp, sizeof(contact), 1, fp);
         printf("________________________________________\n");
-        printf("Contact's number successfully updated!!!!\n");
+        printf("Contact's Phone Number Successfully Updated!!!!\n");
         PrintContact(temp);
         break;
     case 3:
         GetContactEmail(temp.email);
         fwrite(&temp, sizeof(contact), 1, fp);
         printf("________________________________________\n");
-        printf("Contact's email successfully updated!!!!\n");
+        printf("Contact's Email Successfully Updated!!!!\n");
         PrintContact(temp);
         break;
     case 4:
@@ -390,23 +390,24 @@ void UpdateContact(FILE *fp){
         GetContactEmail(temp.email);
         fwrite(&temp, sizeof(contact), 1, fp);
         printf("________________________________________\n");
-        printf("Contact successfully updated!!!!\n");
+        printf("Contact Successfully Updated!!!!\n");
         PrintContact(temp);
         break;
     }
 }
 
 void SearchAndUpdateContact(){
-    FILE *fp = fopen("13_project3.dat", "a+b");
+    FILE *fp = fopen("13_project3.dat", "ab+");
     if(fp == NULL){
         FileError();
         return;
     }
-    printf("Enter the contact details to update it\n");
+    printf("_____________________________________________\n");
+    printf("Search The Contact To Update It\n");
     int found = SearchContact(fp);
     if(!found){
         printf("_____________________________________________\n");
-        printf("Error: Contact not found\n");
+        printf("Error: Contact Not Found\n");
         printf("_____________________________________________\n");
     }else{
         fseek(fp, -sizeof(contact), SEEK_CUR);
@@ -428,7 +429,7 @@ void DeleteContact(FILE *fp){
     contact delete;
     fread(&delete, sizeof(contact), 1, fp);
     fseek(fp, 0, SEEK_SET);
-    FILE *temp = fopen("temp.dat", "a+b");
+    FILE *temp = fopen("temp.dat", "ab+");
     if(temp == NULL){
         FileError();
         return;
@@ -441,7 +442,7 @@ void DeleteContact(FILE *fp){
         fwrite(&new, sizeof(contact), 1, temp);
     }
     printf("_______________________________________\n");
-    printf("Contact successfully deleted\n");
+    printf("Contact Successfully Deleted\n");
     printf("_______________________________________\n");
     fclose(fp);
     fclose(temp);
@@ -450,16 +451,17 @@ void DeleteContact(FILE *fp){
 }
 
 void SearchAndDeleteContact(){
-    FILE *fp = fopen("13_project3.dat", "a+b");
+    FILE *fp = fopen("13_project3.dat", "ab+");
     if(fp == NULL){
         FileError();
         return;
     }
-    printf("Enter the contact details to delete contact\n");
+    printf("_____________________________________________\n");
+    printf("Search The Contact To Delete It\n");
     int found = SearchContact(fp);
     if(!found){
         printf("_____________________________________________\n");
-        printf("Error: Contact not found\n");
+        printf("Error: Contact Not Found\n");
         printf("_____________________________________________\n");
     }else{
         DeleteContact(fp);
@@ -468,7 +470,7 @@ void SearchAndDeleteContact(){
 
 int main(){
     while(1){
-        DisplayOptions();
+        ContactMenu();
         int UserInput = GetUserIntInput(6, 1);
         switch(UserInput)
         {
@@ -479,7 +481,7 @@ int main(){
             SearchAndShowContact();
             break;
         case 3: 
-            ShowContacts();
+            ShowAllContacts();
             break;
         case 4:
             SearchAndUpdateContact();
